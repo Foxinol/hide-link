@@ -17,6 +17,7 @@
       padding: 20px;
       position: relative;
       overflow-x: hidden;
+      flex-direction: column;
     }
     .bg-hearts { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
     .heart { position: absolute; color: #e2e8f0; opacity: 0.6; user-select: none; }
@@ -83,6 +84,25 @@
     .footer-note a { color: #2563eb; text-decoration: none; font-weight: 500; border-bottom: 1px dotted #60a5fa; }
     i { font-size: 1.25rem; vertical-align: middle; }
     .flex { display: flex; align-items: center; }
+
+    .credit {
+      position: relative;
+      z-index: 10;
+      margin-top: 20px;
+      text-align: center;
+      font-family: 'SF Pro Display', -apple-system, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 0.9rem;
+      letter-spacing: 0.3px;
+      color: #3a4c62;
+      opacity: 0.75;
+      backdrop-filter: blur(4px);
+      padding: 6px 16px;
+      border-radius: 40px;
+      background: rgba(255,255,255,0.3);
+      display: inline-block;
+      border: 0.5px solid rgba(255,255,255,0.6);
+    }
   </style>
 </head>
 <body>
@@ -119,6 +139,7 @@
     <div class="footer-note"><a href="./"><i class="ri-arrow-left-line"></i> назад к генератору</a></div>
   </div>
 </div>
+<div class="credit">Made by Type | codeplen.ru</div>
 <script>
   (function(){
     const p = new URLSearchParams(location.search);
